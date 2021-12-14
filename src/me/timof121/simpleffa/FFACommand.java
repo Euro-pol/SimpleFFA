@@ -20,13 +20,13 @@ public class FFACommand implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("joinffa")) {
         	Location ffa = new Location(Bukkit.getWorld("test"), 10.5, 65, 4.5, -45, 0);
         	player.teleport(ffa);
-            player.sendMessage("�e�l(!) �eYou have been teleported to FFA!");
+            player.sendMessage("§e§l(!) §eYou have been teleported to FFA!");
         }
 
         else if (cmd.getName().equalsIgnoreCase("leaveffa")) {
         	Location spawn = new Location(Bukkit.getWorld("test"), 0.5, 69, 0.5, -90, 0);
         	player.teleport(spawn);
-            player.sendMessage("�e�l(!) �eYou have left FFA!");
+            player.sendMessage("§e§l(!) §eYou have left FFA!");
         }
 
         return true;
