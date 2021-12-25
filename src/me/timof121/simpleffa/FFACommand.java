@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.Location;
 import org.bukkit.*;
+import org.bukkit.inventory.*;
 
 public class FFACommand implements CommandExecutor {
 
@@ -19,8 +20,11 @@ public class FFACommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("joinffa")) {
         	Location ffa = new Location(Bukkit.getWorld("test"), 10.5, 65, 4.5, -45, 0);
+        	ItemStack sword = new ItemStack(Material.IRON_SWORD, 1);
         	player.teleport(ffa);
+        	player.getInventory().addItem(sword);
             player.sendMessage("§e§l(!) §eYou have been teleported to FFA!");
+            
         }
 
         else if (cmd.getName().equalsIgnoreCase("leaveffa")) {
