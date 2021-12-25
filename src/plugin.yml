@@ -1,6 +1,6 @@
 name: SimpleFFA
 main: me.timof121.simpleffa.MainClass
-version: 0.2
+version: 0.2.1
 api-version: 1.8.8
 author: timof121
 description: A simple plugin that implements a Free For All gamemode on your server!
