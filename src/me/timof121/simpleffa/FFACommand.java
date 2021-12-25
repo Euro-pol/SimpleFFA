@@ -20,6 +20,7 @@ public class FFACommand implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("joinffa")) {
         	Location ffa = new Location(Bukkit.getWorld("test"), 10.5, 65, 4.5, -45, 0);
+        	player.getInventory().clear();
         	ItemStack sword = new ItemStack(Material.IRON_SWORD, 1);
         	player.teleport(ffa);
         	player.getInventory().addItem(sword);
@@ -30,6 +31,7 @@ public class FFACommand implements CommandExecutor {
         else if (cmd.getName().equalsIgnoreCase("leaveffa")) {
         	Location spawn = new Location(Bukkit.getWorld("test"), 0.5, 69, 0.5, -90, 0);
         	player.teleport(spawn);
+        	player.getInventory().clear();
             player.sendMessage("§e§l(!) §eYou have left FFA!");
         }
 
