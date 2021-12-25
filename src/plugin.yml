@@ -10,6 +10,6 @@ commands:
       usage: /joinffa
       permission: simpleffa.join
    leaveffa:
-      description: Leave FFA lmao.
+      description: Leave FFA.
       usage: /leaveffa
       permission: simpleffa.leave
