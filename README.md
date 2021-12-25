@@ -1,2 +1,2 @@
 # SimpleFFA
-FFA plugin for my server, don't use it, very bad right now.
+FFA plugin for my server which isn't very customizable rn but hey it works.
